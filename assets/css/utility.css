@@ -1,0 +1,90 @@
+
+.w-200{
+    width: 200px;
+    height: 80px;
+}
+.nav-img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.bg-hero{
+    background-image: url(../image/png/hero-1.png);
+    height: 78vh !important;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 500ms;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:   white    ;
+    border-radius: 10rem;
+    z-index: -2;
+}
+ 
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: black ;
+    transition: all 0.1s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fff;
+}
+.button:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.w-70{
+    width: 58%;
+}
+
+video {
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../image/png/bulb.png) !important;
+}
+
+.img-bilion{
+    width: 381px;
+    height: 477px;
+    border-radius: 18px;
+}
+

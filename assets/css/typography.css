@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'hanson';
+    src: url(../font/hanson-bold/Hanson-Bold.ttf);
+}
+
+.fs_1 {
+    font-size: var(--fs_1);
+}
+
+.fs_2 {
+    font-size: var(--fs_2);
+}
+
+.fs_3 {
+    font-size: var(--fs_3);
+}
+
+.fs_4 {
+    font-size: var(--fs_4);
+}
+
+.fs_5 {
+    font-size: var(--fs_5);
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+.fw_800 {
+    font-weight: 800;
+}
+
+.ff_heading {
+    font-family: 'hanson';
+}
+
+.ff_body {
+    font-family: 'Montserrat', sans-serif;
+}
+.color_primary{
+    color: var(--color_primary);
+}
