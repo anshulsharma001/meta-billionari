@@ -26,7 +26,7 @@
 
 @media screen and (min-width:576px) {
     :root {
-        --fs_1: 3.125rem;
+        --fs_1: 1rem;
         --fs_2: 1.875rem;
         --fs_3: 1.25rem;
         --fs_4: 1.125rem;
@@ -36,7 +36,7 @@
 
 @media screen and (min-width:768px) {
     :root {
-        --fs_1: 3.125rem;
+        --fs_1: 2rem;
         --fs_2: 1.875rem;
         --fs_3: 1.25rem;
         --fs_4: 1.125rem;
@@ -46,12 +46,14 @@
 
 @media screen and (min-width:1200px) {
     :root {
-        --fs_1: 3.125rem;
+        --fs_1: 2rem;
         --fs_2: 1.875rem;
         --fs_3: 1.25rem;
         --fs_4: 1.125rem;
         --fs_5: 0.875rem;
     }
+
+    
 }
 
 
