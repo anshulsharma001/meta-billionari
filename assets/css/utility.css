@@ -1,5 +1,10 @@
 html body{
     overflow-x: hidden;
+    height: 100%;
+}
+
+.h_nav{
+    height: 18vh !important;
 }
 
 .w-200{
@@ -12,16 +17,21 @@ html body{
     height: 40px;
     border-radius: 50%;
 }
+.nav-img:hover
+{
+    transform: scale(1.2);
+}
 
 .bg-hero{
     background-image: url(../image/png/hero-1.png);
-    height: 95vh !important;
+    height: 78vh !important;
+    /* background-position: 50% 7%; */
     background-position: center;
     background-size: cover;
     
 }
 .z-index-999{
-    z-index: 999;
+    z-index: 999 !important;
 }
 
 
@@ -86,7 +96,7 @@ video {
 }
 
 .navbar-toggler-icon {
-    background-image: url(../image/png/bulb.png) !important;
+    background-image: url(../image/png/hamburger.png) !important;
 }
 
 .img-bilion{
@@ -115,10 +125,10 @@ video {
 }
 
 .sticky{
-    top: 0%;
+    top: 40%;
     height: auto;
     position: sticky !important;
-    z-index: 100;
+    
 }
 .charity{
     width: 636px;
@@ -158,13 +168,7 @@ video {
   }
 
   .slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 50px;
-    line-height: 1;
-    opacity: .75;
-    position: absolute;
-    color: white;
-    left: -100%;
+   
   
 }
 
@@ -217,6 +221,32 @@ video {
     background-color: #e2e1df;
 }
 
+.slick-next {
+    z-index: 11;
+    right: 10px;
+}
+.slick-prev {
+    z-index: 11;
+    left: -12px;
+}
+.slick-prev:before {
+    content: url(../image/png/prew.png);
+    
+    border-radius: 50%;
+    padding: 5px 5px 2px 2px;
+}
+.slick-next:before {
+    content: url(../image/png/next.png);
+    
+    border-radius: 50%;
+    padding: 5px 5px 2px 2px;
+}
+.slick-next:before,
+.slick-prev:before {
+    font-size: 50px;
+    opacity: 1;
+}
+
 @media screen and (max-width:1200px) {
 
     .tilt-img{
@@ -249,9 +279,10 @@ video {
 @media screen and (max-width:700px) {
 
     .tilt-img{
-        width: 100px !important;
-        height: 100px !important;
+        width: 150px !important;
+        height: 150px !important;
         border-radius: 50%;
+        margin-top: 20px;
     }
     .grid_img{
         height: 200px;
@@ -259,8 +290,9 @@ video {
         border-radius: 18px;
       }
       .bg-hero{
-        background-image: url(../image/png/hero-1.png);
-        height: 45vh !important;
+        background-image: url(../image/png/hero.png);
+        height: 35vh !important;
+        background-image: cover !important;
     }
     .slider-img{
         width: 150px;
@@ -295,8 +327,8 @@ video {
     }
 
     .charity{
-        width: 250px;
-        height: 150px;
+        width: 335px;
+        height: 188px;
         border-radius: 18px;
     }
     .img-bilion{
@@ -315,18 +347,18 @@ video {
         background-size: cover;
         width: 0px;
         height: 00px;
-        left:-240%;
+        left:-0%;
         top: 10%;
     }
     .horizontal1 {
         position: absolute;
         background-size: cover;
-        right:95%;
+        right:5%;
         top: 60%;
     }
     .field{
-        width: 200px;
-        height: 300px;
+        width: 335px;
+        height: 418px;
         border-radius: 18px;
       }
 
@@ -335,12 +367,110 @@ video {
         width: 140px;
         border-radius: 18px;
       }
+      .slick-prev:before {
+        position: absolute;
+        top: 500%;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .slick-next:before {
+        position: absolute;
+        right: 160%;
+        top: 500%;
+        width: 50px !important;
+        height: 50px !important;
+    }
+   
 
       :root {
         --fs_1: 1rem !important;
-        --fs_2: 1.875rem;
-        --fs_3: 1.25rem;
-        --fs_4: 1.125rem;
-        --fs_5: 0.875rem;
+        --fs_2: 25px !important;
+        --fs_3: 1rem !important;
+        --fs_4: 1rem !important;
+        --fs_5: 0.875rem !important;
+        --fs_35: 20px !important;
     }
+
+    /* video {
+        background-size: cover;
+        background-position: 50% 50%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        height:200px;
+        width: 200px;
+    } */
+
+    .img-bilion{
+        width: 300px;
+        height: 375px;
+        border-radius: 18px;
+      
+    }
+
+   .width-para{
+    width: 70% !important;
+   }
+    
 }
+
+@media screen and (max-width:400px){
+    /* .biggest-sales{
+        display: none !important;
+    } */
+    .color_white{
+        background-color: white;
+    }
+    .text_white{
+        color: black !important;
+    }
+    html,body{
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .w-70{
+        width: 78%;
+    }
+    .w-200{
+        width: 150px;
+        height: 60px;
+    }
+
+    .reverse{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+.center_text{
+    text-align: center;
+}
+    .roadmap::after {
+        position: absolute;
+        content: "";
+        height: 95%;
+        width: 6px;
+        top: 1.5%;
+        left: 0;
+        border-radius: 10px;
+        background-image: linear-gradient(180deg, #0F0F11, #222529 39%, #878D95 68%, #DADADA);
+    }
+    
+    .roadmap::before {
+        position: absolute;
+        content: "";
+        width: 12px;
+        top: -8px;
+        left: -2px;
+        border-radius: 50%;
+        height: 12px;
+        background-color: white;
+        border: 2px solid black;
+    }
+    
+}
+
+
+.text_white{
+    color: white;
+}
+
